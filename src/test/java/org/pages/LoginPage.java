@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-	@FindBy(id = "dbvdv")
+	@FindBy(id = "username")
 	private WebElement inputUserName;
 
 	@FindBy(name = "pwd")
