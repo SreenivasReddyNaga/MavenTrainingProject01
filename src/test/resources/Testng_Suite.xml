@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Training Test Suite">
+
+	<parameter name="excelFilePath" value="src/test/resources/TestData.xlsx"></parameter>
+	<parameter name="csvFilePath" value="src/test/resources/TestData.csv"></parameter>
+	<parameter name="excelSheetName" value="Login"></parameter>
+
+	<test name="Testing login on mercury application using Firefox">
+		<parameter name="browserName" value="Firefox"></parameter>
+		<parameter name="url" value="http://demo.actitime.com/login.do"></parameter>
+
+		<classes>
+			<class name="org.maven.LoginTest" />
+		</classes>
+	</test>
+
+</suite>
